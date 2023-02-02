@@ -1,0 +1,228 @@
+  /*-----VARIABLES & RESET-----*/
+  
+   :root {
+      --blue: hsl(228, 45%, 44%);
+      --purple: #382AE1;
+  }
+  
+  html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+      font-family: 'Red Hat Display', sans-serif;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  /*-----CONTAINERS-----*/
+  
+  body {
+      font-size: 1.1rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+  }
+  
+  div.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45rem;
+      height: 69.7rem;
+      box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+      border-radius: 2rem;
+      background-color: white;
+  }
+  
+  section.details {
+      margin-top: 2rem;
+  }
+  
+  div.proceed {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 5rem;
+      background-color: var(--purple);
+      width: 35.4rem;
+      margin-top: 3.2rem;
+      border-radius: 1.1rem;
+      box-shadow: 0 2rem 2rem -2rem rgba(56, 42, 225, 0.390291);
+      border: 1px solid black;
+  }
+  
+  div.proceed:hover {
+      background-color: #766CF1;
+  }
+  
+  main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      max-width: 144rem;
+      max-height: 90rem;
+      background-image: url("/images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-color: #F2F2F2;
+  }
+  
+  section.details {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 35.4rem;
+      height: 9.8rem;
+      background-color: #F7F9FF;
+      border-radius: 1.1rem;
+  }
+  
+  section.links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  section.text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  /*-----ELEMENTS-----*/
+  
+  a.proceed {
+      text-decoration-line: none;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: white;
+  }
+  
+  a.cancel {
+      text-decoration-line: none;
+      margin-top: 3.2rem;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: #717FA6;
+  }
+  
+  a.cancel:hover {
+      color: #1F2E55;
+  }
+  
+  a.change {
+      text-decoration-line: underline;
+      text-underline-offset: .5rem;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--purple);
+  }
+  
+  a.change:hover {
+      color: #766CF1
+  }
+  
+  h1 {
+      display: none;
+  }
+  
+  h2 {
+      margin-top: 4 rem;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #1F2E55;
+  }
+  
+  h3 {
+      font-weight: 900;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+  }
+  
+  img.hero {
+      border-radius: 20px 20px 0 0;
+  }
+  
+  p.price {
+      margin-top: .6rem;
+      font-weight: 500;
+      font-size: 1.6rem;
+  }
+  
+  p.summary {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: var(--blue);
+      width: 35.4rem;
+      margin-top: 1.7rem;
+  }
+  /*-----CLASSES & IDs-----*/
+  
+  .attribution {
+      position: relative;
+      bottom: -6rem;
+      text-align: center;
+  }
+  
+  .attribution a {
+      color: var(--blue);
+  }
+  
+  @media screen and (max-width: 375px) {
+      main {
+          max-width: 37.5rem;
+          max-height: 70.9rem;
+          background-image: url("/images/pattern-background-mobile.svg");
+      }
+      div.container {
+          width: 32.7rem;
+          height: 56.7rem;
+      }
+      div.proceed {
+          width: 27.9rem;
+          margin-top: 2.2rem;
+      }
+      section.details {
+          width: 27.9rem;
+          height: 8.1rem;
+          margin-top: 2.3rem;
+      }
+      a.cancel {
+          font-size: 1.5rem;
+          margin-top: 2.2rem;
+      }
+      a.change {
+          font-size: 1.3rem;
+          text-underline-offset: .2rem;
+          margin-bottom: 1.2rem;
+      }
+      a.proceed {
+          font-size: 1.5rem;
+      }
+      h2 {
+          margin-top: 3rem;
+          font-size: 2.2rem;
+          line-height: 2.911rem;
+      }
+      h3 {
+          font-size: 1.4rem;
+          line-height: 1.852px;
+          margin-top: 1rem;
+      }
+      img.hero {
+          width: 100%;
+      }
+      p.summary {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          width: 26.3rem;
+      }
+      p.price {
+          font-size: 1.4rem;
+          line-height: 1.852rem;
+          margin-top: 1.1rem;
+      }
+  }
